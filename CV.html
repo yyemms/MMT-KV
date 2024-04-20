@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ema Alduk</title>
+    <link rel="stylesheet" href="CV.css">
+    <script src="https://kit.fontawesome.com/44816a1e7a.js" crossorigin="anonymous"></script>
+    <script>
+        function openLightbox(imgSrc) {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxImg = document.getElementById("lightbox-img");
+
+            lightbox.style.display = "block";
+            lightboxImg.src = imgSrc;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="student-info">
+            <img class="imgStudent" src="student1.jpeg" onclick="openLightbox('student1.jpeg')" alt="Slika Studenta 1" >
+            <h4>Osobno</h4>
+            <ul>
+                <li><i class="icons fa-solid fa-house"></i><b>Adresa</b><br />&nbsp;&nbsp;&nbsp;Vinkovačka
+                    1<br />&nbsp;&nbsp;&nbsp;<a id="dakovo-link" href="https://hr.wikipedia.org/wiki/%C4%90akovo"
+                        target="_blank">Đakovo</a></li>
+                <br />
+                <li><i class="icons fa-regular fa-calendar"></i><b>Datum rođenja</b><br />&nbsp;&nbsp;&nbsp;08-03-2003
+                </li>
+                <br />
+                <li><i class="icons fa-solid fa-envelope"></i><b>E-pošta</b><br />&nbsp;&nbsp;&nbsp;aldukema@gmail.com
+                </li>
+
+            </ul>
+            <h4>Hobiji</h4>
+            <ul>
+                <li><i class="icons fa-solid fa-guitar"></i>Sviranje gitare</li>
+                <li><i class="icons fa-solid fa-camera-retro"></i>Fotografija</li>
+            </ul>
+            <h4>Osobne vještine</h4>
+            <ul>
+                <li><i class="icons fa-solid fa-diamond"></i>komunikativna</li>
+                <li><i class="icons fa-solid fa-diamond"></i>ambiciozna</li>
+                <li><i class="icons fa-solid fa-diamond"></i>odgovorna</li>
+                <li><i class="icons fa-solid fa-diamond"></i>kreativna</li>
+                <li><i class="icons fa-solid fa-diamond"></i>organizirana</li>
+
+            </ul>
+
+        </div>
+        <div class="additional-info">
+            <h1 class="title">Ema Alduk</h1>
+            <div class="obrazovanje_info">
+                <h3>Obrazovanje</h3>
+                <ul>
+                    <li>Osnovna škola: <a id="link" href="http://os-vnazor-dj.skole.hr/" target="_blank">"Vladimir
+                            Nazor" Đakovo</a></li>
+                    <li>Srednja škola: <a id="link"
+                            href="https://www.facebook.com/p/Gimnazija-A-G-Mato%C5%A1a-%C4%90akovo-100075659372195/"
+                            target="_blank">Gimnazija A. G. Matoša Đakovo</a></li>
+                    <li>Fakultet: <a id="link" href="https://www.ferit.unios.hr/" target="_blank">Fakultet
+                            elektrotehnike, računarstva i informacijskih tehnologija Osijek </a></li>
+                </ul>
+            </div>
+            <div class="radno_iskustvo_info">
+                <h3>Radno iskustvo</h3>
+                <ul>
+                    <li class="liTitle">Agentica korisničke službe<br />
+                        <p>svibanj 2022. - veljača 2024.</p>
+                        <p class="liDetail"><b>Hrvatski telekom</b> <br />
+                            Kroz moje iskustvo kao agentice korisničke službe, aktivno sam sudjelovala u pružanju
+                            podrške korisnicima telekomunikacijskih usluga, nudeći im informacije o proizvodima i
+                            uslugama kako bih osigurala njihovo zadovoljstvo.
+                            Također sam se bavila savjetovanjem klijenata o ugovorima te rješavala njihove pritužbe,
+                            istovremeno pazeći na točnost njihovih osobnih podataka.
+                        </p>
+                    </li>
+
+                    <li class="liTitle">Stručna praksa - Frontend Developer<br />
+                        <p>listopad 2023. - ožujak 2024.</p>
+                        <p class="liDetail"><b>Hammon d.o.o </b> <br />
+                            Tijekom stručne prakse imala sam priliku sudjelovati u dizajniranju web stranica i
+                            aplikacija.
+                            Upoznala sam se s HTML-om, CSS-om, JavaScript-om, PHP-om i osnovama baza podataka te sam
+                            stekla praktično iskustvo u njihovoj primjeni.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kratko audio predstavljanje</h3>
+                <audio id="myAudio" controls>
+                    <source src="audio.aac" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            <div>
+                <br /><a href="index.html"><button class="button">Povratak na početnu stranicu</button></a>
+            </div>
+
+        </div>
+
+        <div class="additional-info-2">
+            <div class="columns">
+                <div class="image-wrapper">
+                    <img class="osnovna-img" src="igraliste.jpg" alt="Osnovna škola" onclick="openLightbox('igraliste.jpg')">
+                </div>
+                <div class="image-wrapper">
+                    <img class="icon" src="dakovo.png" alt="Đakovo, katedrala" onclick="openLightbox('dakovo.png')">
+                </div>
+            </div>
+            <div class="columns">
+                <div class="image-wrapper">
+                    <img class="srednja-img" src="korzo.bmp" alt="Srednja škola" onclick="openLightbox('korzo.bmp')">
+                </div>
+                <div class="image-wrapper">
+                    <img class="proljece-img" src="proljece.tif" alt="Proljeće u Đakovu" onclick="openLightbox('proljece.tif')">
+                </div>
+            </div>
+
+            <video width="640" height="360" controls>
+                <source src="djakovoVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="">
+    </div>
+    <footer>
+        <p class="footer_info">Web stranica izrađena za vrijeme pohađanja Elektrotehničkog fakulteta u Osijeku u sklopu
+            kolegija Multimedijska tehnika.</p>
+    </footer>
+
+</body>
+
+</html>
